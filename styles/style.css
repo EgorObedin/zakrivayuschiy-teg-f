@@ -20,7 +20,7 @@
   place-items: center;
   padding: 100px 0;
   color: var(--accent-color);
-  font-family: var(--main-font, "Inter-Variable", serif);
+  font-family: var(--main-font);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -214,73 +214,6 @@
   max-block-size: 38px;
 }
 
-.like-icon.is-liked .heart {
-  transition-delay: 0.1s;
-  transform-origin: 50% 50%;
-  animation: icon-heart 0.3s ease-in;
-}
-.like-icon .contour {
-  fill: var(--heart-icon-contour-color);
-  transition: fill 0.1s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-icon-fill-color);
-  transition: fill 0.3s;
-  transition-delay: 0.06s;
-}
-
-.card__icon-button .core {
-  fill: transparent;
-  transition: fill 0.3s;
-  transition-delay: 0.03s;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--heart-icon-contour-color);
-  transition: fill 0.3s;
-}
-.card__icon-button:active .core {
-  fill: var(--heart-icon-fill-color);
-  transition: fill 0.3s;
-}
-.like-icon.is-liked .core {
-  fill: var(--heart-icon-fill-color);
-  transition: fill 0.3s;
-}
-
-.card__icon-button .main-body {
-  fill: transparent;
-  transition: fill 0.3s;
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--heart-icon-contour-color);
-  transition: fill 0.3s;
-  transition-delay: 0.05s;
-}
-
-.card__icon-button:active .main-body {
-  fill: var(--heart-icon-fill-color);
-  transition: fill 0.3s;
-  transition-delay: 0.05s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-icon-fill-color);
-  transition: fill 0.3s;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-}
-
-.like-icon.is-liked .sparks {
-  transition-delay: 0.3s;
-  transform-origin: center;
-  animation: icon-heart-sparks 0.3s ease-in;
-}
-
 .card__icon-button:focus {
   outline: none;
 }
@@ -349,8 +282,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  min-inline-size: 355px;
-  min-block-size: 51px;
+  min-inline-size: 335px;
+  min-block-size: 55px;
 }
 
 .button-save:focus {
@@ -375,6 +308,7 @@
   background-color: var(--bg-color);
   max-inline-size: 357px;
 }
+
 .dialog-save:is([open]) {
   display: grid;
 }
@@ -404,6 +338,7 @@
 .button-close {
   margin-top: 30px;
   block-size: 38px;
+  inline-size: 293px;
 }
 
 .dialog-save__title-text {
@@ -432,9 +367,17 @@
     min-block-size: 86px;
   }
 
+  .button-close {
+    inline-size: 257px;
+  }
+
   .floppy-icon {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .dialog-save {
+    max-inline-size: 341px;
   }
 }
 
