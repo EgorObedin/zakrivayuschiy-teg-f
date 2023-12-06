@@ -30,6 +30,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wdth" var(--text-wdth-font);
+  font-weight: var(--text-wdth-font);
 }
 
 .header {
@@ -176,6 +177,7 @@
   padding: 6px 10px 4px;
   font-size: 18px;
   font-variation-settings: var(--title-wdth-font);
+  font-weight: var(--title-wdth-font);
 }
 
 .card__img {
@@ -193,6 +195,7 @@
   font-size: 18px;
   line-height: 1.16667;
   font-variation-settings: var(--text-wdth-font);
+  font-weight: var(--text-wdth-font);
 }
 
 .card__button {
