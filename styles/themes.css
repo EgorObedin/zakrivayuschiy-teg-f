@@ -4,3 +4,37 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.theme-light {
+  --bg-color: #FFF;
+  --accent-color: #000;
+  --title-wdth-font: 700;
+  --text-wdth-font: 400;
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#E7E7E7 0.01%, #1A1A1A 100%);
+  --button-text-color: #FFF;
+  --heart-icon-contour-color: #000;
+}
+
+.theme-dark {
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --title-wdth-font: 785;
+  --text-wdth-font: 465;
+  --bg-image: repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
+  --button-text-color: #00CC14;
+  --heart-icon-contour-color: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --title-wdth-font: 785;
+  --text-wdth-font: 465;
+  --bg-image: repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
+  --button-text-color: #00CC14;
+  --heart-icon-contour-color: #00CC14;
+  }
+
+}
+

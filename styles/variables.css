@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* для светлой темы */
+:root {
+  --bg-color: #FFF;
+  --accent-color: #000;
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
+  --title-wdth-font: 700;
+  --text-wdth-font: 400;
+  --bg-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#E7E7E7 0.01%, #1A1A1A 100%);
+  --content-wdth: clamp(375px, 49%, 700px);
+  --watermark-shadow: #FFF;
+  --button-text-color: #FFF;
+  --heart-icon-contour-color: #000;
+  --heart-icon-fill-color: red;
+}
